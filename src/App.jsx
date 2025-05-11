@@ -1,6 +1,5 @@
 import "./App.css";
-import ComponentA from "./components/ComponentA";
-import { MessageProvider } from "./context/MessageContext";
+import ToggleBoolean from "./components/ToggleBoolean";
 
 function App() {
   return (
@@ -11,11 +10,10 @@ function App() {
           padding: "10px 30px",
         }}
       >
-        Context demo
+        Custom hook demo
       </h2>
-      <MessageProvider>
-        <ComponentA />
-      </MessageProvider>
+      <ToggleBoolean/>
+
     </section>
   );
 }
