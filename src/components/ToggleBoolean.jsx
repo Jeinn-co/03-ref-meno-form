@@ -1,17 +1,14 @@
 import React, { useState } from "react";
+import useToggle from "../hooks/toggleBoolean";
 
-export default function TogglePanel() {
-  const [isOpen, setIsOpen] = useState(true);
-
-  const handleToggle = () => {
-    setIsOpen((prev) => !prev);
-  };
+const toggleBoolean = () => {
+  const [isOpen, toggleOpen] = useToggle(true);
 
   return (
     <div>
       <h2>Toggle Panel</h2>
       <button
-        onClick={handleToggle}
+        onClick={toggleOpen}
         style={{
           width: 100,
           padding: 10,
@@ -35,4 +32,6 @@ export default function TogglePanel() {
       )}
     </div>
   );
-}
+};
+
+export default toggleBoolean;
