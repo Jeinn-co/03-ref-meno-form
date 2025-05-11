@@ -7,7 +7,7 @@ export default function ComponentA() {
   const [message, setMessage] = useState("Initial message from ComponentA");
 
   return (
-    <MessageContext.Provider value="hello">
+    <MessageContext.Provider value={message}>
       <div style={{ backgroundColor: "yellow" }}>
         <h2>ComponentA (1 Level)</h2>
         <button
