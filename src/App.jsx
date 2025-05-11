@@ -2,6 +2,7 @@ import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./App.css";
 import ComponentA from "./components/ComponentA";
+import { MessageProvider } from "./context/MessageContext";
 
 function App() {
   return (
@@ -14,7 +15,9 @@ function App() {
       >
         Context demo
       </h2>
-      <ComponentA/>
+      <MessageProvider>
+        <ComponentA />
+      </MessageProvider>
     </section>
   );
 }
