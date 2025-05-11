@@ -1,7 +1,8 @@
 import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./App.css";
-import DemoCallback from "./components/demoCallback";
+import DemoUseMemo from "./components/demoUseMemo";
+// import DemoCallback from "./components/demoCallback";
 
 function App() {
   return (
@@ -14,7 +15,7 @@ function App() {
       >
         Performance hooks demo
       </h2>
-      <DemoCallback />
+      <DemoUseMemo/>
     </section>
   );
 }
