@@ -1,8 +1,8 @@
 import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./App.css";
-import DemoUseMemo from "./components/demoUseMemo";
-// import DemoCallback from "./components/demoCallback";
+import ComponentA from "./components/ComponentA";
+import { MessageProvider } from "./context/MessageContext";
 
 function App() {
   return (
@@ -13,9 +13,11 @@ function App() {
           padding: "10px 30px",
         }}
       >
-        Performance hooks demo
+        Context demo
       </h2>
-      <DemoUseMemo/>
+      <MessageProvider>
+        <ComponentA />
+      </MessageProvider>
     </section>
   );
 }
