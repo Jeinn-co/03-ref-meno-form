@@ -15,7 +15,9 @@ function App() {
       {/* <RefChangeColor /> */}
       <RefSetFocusInput />
       {/* <RefPreValue/> */}
-      <button style={{padding:'20 30'}}>hello</button>
+      <div>
+        <button style={{ padding: "20 30" }}>hello</button>
+      </div>
     </>
   );
 }

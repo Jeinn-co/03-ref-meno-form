@@ -1,13 +1,12 @@
-import React from 'react'
+import React from "react";
 
 const RefSetFocusInput = () => {
   return (
-    <div>
-      RefSetFocusInput
+    <>
+      <div>RefSetFocusInput</div>
+      <input type="text" value="123" />
+    </>
+  );
+};
 
-      <input type="text" value="123"/>
-    </div>
-  )
-}
-
-export default RefSetFocusInput
+export default RefSetFocusInput;
