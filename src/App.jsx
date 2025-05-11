@@ -1,20 +1,21 @@
-import { useState, useRef, useEffect } from "react";
 import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./App.css";
-import RefPreValue from "./components/RefPreValue";
+import DemoCallback from "./components/demoCallback";
 
 function App() {
-  const [count, setCount] = useState(0);
-
-  const handleChangeColor = () =>{
-  }
-
   return (
-    <>
-      <h2>performance hooks demo</h2>
-
-    </>
+    <section>
+      <h2
+        style={{
+          backgroundColor: "#ccc",
+          padding: "10px 30px",
+        }}
+      >
+        Performance hooks demo
+      </h2>
+      <DemoCallback />
+    </section>
   );
 }
 
