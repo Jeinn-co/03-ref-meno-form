@@ -12,13 +12,8 @@ function App() {
 
   return (
     <>
-      <h2>ref demo</h2>
-      <RefPreValue/>
-      {/* <div>
-        <button 
-          onClick={handleChangeColor}
-        style={{ padding: "20 30" }}>number count</button>
-      </div> */}
+      <h2>performance hooks demo</h2>
+
     </>
   );
 }
