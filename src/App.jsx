@@ -2,7 +2,7 @@ import { useState, useRef, useEffect } from "react";
 import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./App.css";
-// import RefChangeColor from "./components/RefChangeColor";
+import RefChangeColor from "./components/RefChangeColor";
 // import RefSetFocusInput from "./components/RefSetFocusInput";
 // import RefPreValue from "./components/RefPreValue";
 
@@ -20,22 +20,14 @@ function App() {
   // }, []);
 
   const handleChangeColor = () =>{
-    refDiv.current.style.backgroundColor = 'red'
+    // refDiv.current.style.backgroundColor = 'red'
+    refDiv.current.innerText = 'Updated'
   }
 
   return (
     <>
       <h2>ref demo</h2>
-      <div
-        ref={refDiv}
-        style={{
-          backgroundColor: "yellow",
-          padding: 30,
-        }}
-      >
-        RefChangeColor
-      </div>
-      {/* <RefChangeColor /> */}
+      <RefChangeColor ref={refDiv} />
       {/* <RefSetFocusInput /> */}
       {/* <RefPreValue/> */}
       <div>

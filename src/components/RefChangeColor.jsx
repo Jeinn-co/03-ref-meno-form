@@ -1,15 +1,21 @@
 import React from "react";
 
-const RefChangeColor = () => {
+const RefChangeColor = (props) => {
+  const { ref } = props;
+
+  console.log("test", props);
   return (
-    <div
-      style={{
-        backgroundColor: "yellow",
-        padding: 30,
-      }}
-    >
-      RefChangeColor
-    </div>
+    <>
+      <div
+        ref={ref}
+        style={{
+          backgroundColor: "yellow",
+          padding: 30,
+        }}
+      >
+        RefChangeColor
+      </div>
+    </>
   );
 };
 
