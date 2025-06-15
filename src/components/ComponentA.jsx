@@ -2,10 +2,8 @@ import React from "react";
 import { useMessage } from "../context/MessageContext";
 import ComponentB from "./ComponentB";
 
-export const MessageContext = createContext(null);
-
 export default function ComponentA() {
-  const { message, setMessage } = useMessage();
+  const { setMessage } = useMessage();
 
   return (
     <div style={{ backgroundColor: "yellow" }}>
