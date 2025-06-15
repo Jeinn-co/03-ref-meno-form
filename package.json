@@ -5,10 +5,12 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "fix": "eslint . --ext .ts,.tsx --fix && prettier --write .",
-    "build": "npm run fix && vite build",
+    "prettier": "npx prettier --write ./src && npx eslint ./src --ext .js,.jsx,.ts,.tsx --fix",
+    "build": "npm run prettier && vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "prepare": "husky install",
+    "test": "echo 'Test running...'"
   },
   "dependencies": {
     "react": "^19.0.0",
@@ -23,6 +25,8 @@
     "eslint-plugin-react-hooks": "^5.2.0",
     "eslint-plugin-react-refresh": "^0.4.19",
     "globals": "^16.0.0",
+    "husky": "^8.0.0",
+    "lint-staged": "^16.1.2",
     "sass-embedded": "^1.88.0",
     "vite": "^6.3.1"
   }
