@@ -1,19 +1,18 @@
-import "./App.css";
-import ToggleBoolean from "./components/ToggleBoolean";
+import './App.css';
+import ToggleBoolean from './components/ToggleBoolean';
 
 function App() {
   return (
     <section>
       <h2
         style={{
-          backgroundColor: "#ccc",
-          padding: "10px 30px",
+          backgroundColor: '#ccc',
+          padding: '10px 30px',
         }}
       >
         Custom hook demo
       </h2>
-      <ToggleBoolean/>
-
+      <ToggleBoolean />
     </section>
   );
 }

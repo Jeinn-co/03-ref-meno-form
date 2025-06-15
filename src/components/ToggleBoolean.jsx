@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import useToggle from "../hooks/toggleBoolean";
+import React from 'react';
+import useToggleBoolean from '../hooks/toggleBoolean';
 
 const buttonStyle = {
   width: 120,
@@ -7,24 +7,24 @@ const buttonStyle = {
   borderRadius: 10,
 };
 
-const toggleBoolean = () => {
-  const [isOpen, toggleOpen] = useToggle(true);
-  const [isOpen2, toggleOpen2] = useToggle(false);
+const ToggleBoolean = () => {
+  const [isOpen, toggleOpen] = useToggleBoolean(true);
+  const [isOpen2, toggleOpen2] = useToggleBoolean(false);
 
   return (
     <div>
       <h2>Toggle Panel</h2>
       <button onClick={toggleOpen} style={buttonStyle}>
-        {isOpen ? "Hide Panel 1" : "Show Panel 1"}
+        {isOpen ? 'Hide Panel 1' : 'Show Panel 1'}
       </button>
       <button onClick={toggleOpen2} style={buttonStyle}>
-        {isOpen2 ? "Hide Panel 2" : "Show Panel 2"}
+        {isOpen2 ? 'Hide Panel 2' : 'Show Panel 2'}
       </button>
       {isOpen && (
         <div
           style={{
             marginTop: 10,
-            background: "#ff0",
+            background: '#ff0',
             padding: 30,
             //   transition: "opacity 0.4s ease",
             //   opacity: isOpen ? 1 : 0,
@@ -37,7 +37,7 @@ const toggleBoolean = () => {
         <div
           style={{
             marginTop: 10,
-            background: "#0ff",
+            background: '#0ff',
             padding: 30,
             //   transition: "opacity 0.4s ease",
             //   opacity: isOpen ? 1 : 0,
@@ -50,4 +50,4 @@ const toggleBoolean = () => {
   );
 };
 
-export default toggleBoolean;
+export default ToggleBoolean;
